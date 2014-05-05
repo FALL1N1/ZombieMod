@@ -1,0 +1,5 @@
+// Changes, even subtle changes, from the latest released version.
+
+- zr_zspawn_force has been renamed to zr_spawn and can respawn a dead player as zombie or human even before the outbreak.
+
+- New feature in respawn module: Allows random respawn team.

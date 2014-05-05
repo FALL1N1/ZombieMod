@@ -1,0 +1,287 @@
+// ============================================================================
+//
+//                              ZOMBIE:RELOADED
+//                            Stage Configuration
+//
+// See Stage Configuration (3.x) section in the manual for detailed
+// info.
+//
+// ============================================================================
+//
+// Every time the humans win a round, they advance to the next stage.  Stages
+// are defined in this file.
+//
+// The string that defines the name of the section will be the name of the stage.
+// These are the different options for each stage:
+// "roundstart"		- Message displayed to all players at the start of the stage.  Leave blank to print nothing.
+// "zombiewin"		- Message displayed to all players when zombies win the round.  Leave blank to print nothing.
+// "humanwin"		- Message displayed to all players when humans win the round.  Leave blank to print nothing.
+// "count"		- The number of zombies that need to be killed to advance to next stage.
+// "respawn"		- Whether or not zombies are respawned until the 'count' is reached, or if we stop respawning zombies when there are 'count' left alive.
+// "cfg"		- The executable .cfg file relative to cfg to execute when this stage is reached.  Ignored if set to empty.
+// "zombies"		- Zombie-specific settings.
+//	"roundstart"	- Displayed to only this team at the start of the stage.  Printed after the global message.  Leave blank to print nothing.
+// 	"zombiewin"	- Message displayed to the zombie team when zombies win the round.  Leave blank to print nothing.
+// 	"humanwin"	- Message displayed to the zombie team when humans win the round.  Leave blank to print nothing.
+//	"playermax"	- Max players allowed on zombie team.  If < 1.0 it will be read as a percentage of the current number of players in the server.
+//	"alivemax"	- Max alive players allowed on zombie team.  Same rule as 'playermax' for values < 1.0.
+//	"attributes"	- Section to modify class attributes.
+//		"attribute"	- This value will be added to the attribute value of all zombies.
+// "humans"		- Same options as the zombie section.
+
+"stages"
+{
+	"Outbreak"
+	{
+		"roundstart"		"Play nicely :)"
+		"zombiewin"		"Zombies win!"
+		"humanwin"		"Humans win!"
+
+		"count"			"15"
+		"respawn"		"yes"
+		"cfg"			"sourcemod/zriot/outbreak.stage.cfg"
+
+		"zombies"
+		{
+			"roundstart"	"GO EAT THOSE FUCKING PANSY HUMANS!"
+			"zombiewin"	"FUCK YEAH NOW GO DO IT AGAIN!"
+			"humanwin"	"AND YOU CALL YOURSELVES ZOMBIES!?"
+
+			"playermax"	"0"
+			"alivemax"	"0"
+
+			"attributes"
+			{
+				"speed"		"0.1"
+				"health"	"50"
+				"knockback"	"-0.3"
+			}
+		}
+
+		"humans"
+		{
+			"roundstart"	"GO SLAUGHTER THOSE BITCH-ASS ZOMBIES!"
+			"zombiewin"	"NOOO YOU GUYS ARE WORTHLESS!"
+			"humanwin"	"FUCK YEAH NOW GO DO IT AGAIN!"
+
+			"playermax"	"0"
+			"alivemax"	"0"
+
+			"attributes"
+			{
+			}
+		}
+	}
+
+	"Uprising"
+	{
+		"count"			"25"
+		"respawn"		"yes"
+		"cfg"			"sourcemod/zriot/uprising.stage.cfg"
+
+		"zombies"
+		{
+			"playermax"	"0"
+			"alivemax"	"0"
+
+			"attributes"
+			{
+				"speed"		"0.1"
+				"health"	"50"
+				"knockback"	"-0.3"
+			}
+		}
+
+		"humans"
+		{
+			"playermax"	"0"
+			"alivemax"	"0"
+
+			"attributes"
+			{
+				"health"	"10"
+			}
+		}
+	}
+
+	"Riot!"
+	{
+		"count"			"35"
+		"respawn"		"yes"
+		"cfg"			"sourcemod/zriot/riot.stage.cfg"
+
+		"zombies"
+		{
+			"playermax"	"0"
+			"alivemax"	"0"
+
+			"attributes"
+			{
+				"speed"		"0.1"
+				"health"	"50"
+				"knockback"	"-0.3"
+			}
+		}
+
+		"humans"
+		{
+			"playermax"	"0"
+			"alivemax"	"0"
+
+			"attributes"
+			{
+			}
+		}
+	}
+
+	"Rampage"
+	{
+		"count"			"45"
+		"respawn"		"yes"
+		"cfg"			"sourcemod/zriot/rampage.stage.cfg"
+
+		"zombies"
+		{
+			"playermax"	"0"
+			"alivemax"	"0"
+
+			"attributes"
+			{
+				"speed"		"0.3"
+				"health"	"50"
+				"knockback"	"-0.3"
+			}
+		}
+
+		"humans"
+		{
+			"playermax"	"0"
+			"alivemax"	"0"
+
+			"attributes"
+			{
+				"speed"		"0.2"
+			}
+		}
+	}
+
+	"Surge"
+	{
+		"count"			"60"
+		"respawn"		"yes"
+		"cfg"			"sourcemod/zriot/surge.stage.cfg"
+
+		"zombies"
+		{
+			"playermax"	"0"
+			"alivemax"	"0"
+
+			"attributes"
+			{
+				"speed"		"0.1"
+				"health"	"100"
+				"knockback"	"-0.1"
+			}
+		}
+
+		"humans"
+		{
+			"playermax"	"0"
+			"alivemax"	"0"
+
+			"attributes"
+			{
+			}
+		}
+	}
+
+	"Storm"
+	{
+		"count"			"100"
+		"respawn"		"yes"
+		"cfg"			"sourcemod/zriot/storm.stage.cfg"
+
+		"zombies"
+		{
+			"playermax"	"0"
+			"alivemax"	"0"
+
+			"attributes"
+			{
+				"speed"		"0.1"
+				"health"	"100"
+				"knockback"	"-0.2"
+			}
+		}
+
+		"humans"
+		{
+			"playermax"	"0"
+			"alivemax"	"0"
+
+			"attributes"
+			{
+				"speed"		""
+				"health"	"10"
+			}
+		}
+	}
+
+	"Containment"
+	{
+		"count"			"200"
+		"respawn"		"yes"
+		"cfg"			"sourcemod/zriot/containment.stage.cfg"
+
+		"zombies"
+		{
+			"playermax"	"0"
+			"alivemax"	"0"
+
+			"attributes"
+			{
+				"speed"		"0.2"
+				"health"	"125"
+				"knockback"	"-0.3"
+			}
+		}
+
+		"humans"
+		{
+			"playermax"	"0"
+			"alivemax"	"0"
+
+			"attributes"
+			{
+				"speed"		""
+				"health"	"20"
+			}
+		}
+	}
+
+	"Final Stand"
+	{
+		
+		"count"			"1"
+		"respawn"		"0"
+		"cfg"			"sourcemod/zriot/finalstand.stage.cfg"
+
+		"zombies"
+		{
+			"playermax"	"0.25"
+			"alivemax"	"1"
+
+			"classes"
+			{
+				"boss"		"yes"
+				"..."		"no"
+			}
+		}
+
+		"humans"
+		{
+			"playermax"	"0"
+			"alivemax"	"0"
+		}
+	}
+}

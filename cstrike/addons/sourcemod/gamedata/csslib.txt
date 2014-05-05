@@ -1,0 +1,34 @@
+"Games"
+{
+	"#default"
+	{
+		"#supported"
+		{
+			"game"			"cstrike"
+		}
+
+		"Offsets"
+		{
+			"FlashlightIsOn"
+			{
+				"windows"	"352"
+				"linux"		"353"
+				"mac"		"353"
+			}
+
+			"FlashlightTurnOn"
+			{
+				"windows"	"353"
+				"linux"		"354"
+				"mac"		"354"
+			}
+
+			"FlashlightTurnOff"
+			{
+				"windows"	"354"
+				"linux"		"355"
+				"mac"		"355"
+			}
+		}
+	}
+}

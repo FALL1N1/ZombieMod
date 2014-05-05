@@ -1,0 +1,63 @@
+"Phrases"
+{
+	// Command: PROJECT_BASE_CMD log whitelist_add
+
+	// {1-2}: PROJECT_CMD_PREFIX
+	"LogMgr basecmd log whitelist_add usage"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"Adds one or more modules to the whitelist.  Usage: {1} log whitelist_add <moduleshortname> [module2] ...\nRelated command(s): {2} log whitelist_add"
+	}
+
+	// Command: <PROJECT_CMD_PREFIX>_log_whitelist_add
+
+	// {1-2}: PROJECT_CMD_PREFIX
+	"LogMgr cmd whitelist_add usage"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"Adds one or more modules to the whitelist.  Usage: {1}_log_whitelist_add <moduleshortname> [module2] ...\nRelated command(s): {2}_log_whitelist_add"
+	}
+
+	"LogMgr cmd whitelist_add"
+	{
+		"#format"	"{1:s}"
+		"en"		"Module \"{1}\" has been added to the whitelist."
+	}
+
+	"LogMgr cmd whitelist_add fail"
+	{
+		"#format"	"{1:s}"
+		"en"		"Module \"{1}\" is already in the whitelist."
+	}
+	
+	// Command: PROJECT_BASE_CMD log whitelist_rem
+
+	// {1-2}: PROJECT_CMD_PREFIX
+	"LogMgr basecmd log whitelist_rem usage"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"Removes one or more modules from the whitelist.  Usage: {1} log whitelist_rem <moduleshortname> [module2] ...\nRelated command(s): {2} log whitelist_rem"
+	}
+
+	// Command: <PROJECT_CMD_PREFIX>_log_whitelist_rem
+
+	// {1-2}: PROJECT_CMD_PREFIX
+	"LogMgr cmd whitelist_rem usage"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"Removes one or more modules from the whitelist.  Usage: {1}_log_whitelist_rem <moduleshortname> [module2] ...\nRelated command(s): {2}_log_whitelist_rem"
+	}
+
+	"LogMgr cmd whitelist_rem"
+	{
+		"#format"	"{1:s}"
+		"en"		"Module \"{1}\" has been removed from the whitelist."
+	}
+
+	"LogMgr cmd whitelist_rem fail"
+	{
+		"#format"	"{1:s}"
+		"en"		"Module \"{1}\" is not in the whitelist."
+	}
+
+}

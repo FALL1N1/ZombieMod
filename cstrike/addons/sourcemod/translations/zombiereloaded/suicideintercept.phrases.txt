@@ -1,0 +1,7 @@
+"Phrases"
+{
+	"Suicide intercept message"
+	{
+		"en"		"Suicide is not allowed at this time!"
+	}
+}

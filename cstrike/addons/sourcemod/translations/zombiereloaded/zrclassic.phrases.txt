@@ -1,0 +1,114 @@
+"Phrases"
+{
+	// **********************************************
+	//         Zombie:Reloaded Classic Core
+	// **********************************************
+
+
+	//                  Gameplay                   //
+	/////////////////////////////////////////////////
+
+	"ZRC gameplay round objective"
+	{
+		"en"		"The game is {green}Humans vs. Zombies{default}, the goal for zombies is to infect all humans by knifing them."
+	}
+
+	//                  Infection                  //
+	/////////////////////////////////////////////////
+
+	"ZRC client to mother zombie"
+	{
+		"en"		"You are the start of a zombie outbreak!  Your only goal now is to infect everyone else!"
+	}
+
+	"ZRC client to zombie"
+	{
+		"en"		"You have been infected!  Your goal is to infect as many humans as you can."
+	}
+
+	"ZRC spawn as zombie"
+	{
+		"en"		"You are a zombie!  Your goal is to infect as many humans as you can."
+	}
+
+	"ZRC zombie to human"
+	{
+		"en"		"Your soul has been brought back from the undead, now find some cover!"
+	}
+
+	"ZRC spawn as human"
+	{
+		"en"		"You are a human.  Now go kick some zombie ass!"
+	}
+
+	"ZRC infect disconnect"
+	{
+		"en"		"The last zombie left the game so the outbreak is restarting with you!"
+	}
+
+	"ZRC infect waiting for players"
+	{
+		"en"		"There's not enough players to choose a mother zombie. Waiting for more players to connect..."
+	}
+
+	// Center text
+	// {1}: Seconds until outbreak.
+	"ZRC infect countdown"
+	{
+		"#format"	"{1:d}"
+		"en"		"Zombie outbreak in: {1} seconds"
+	}
+
+	"ZRC command infect syntax"
+	{
+		"en"		"Turn a player into a zombie.  Usage: zr_infect <#userid|name> [respawn - 1/0]"
+	}
+
+	"ZRC command human syntax"
+	{
+		"en"		"Turn a player into a human.  Usage: zr_human <#userid|name> [respawn - 1/0] [protect - 1/0]"
+	}
+
+	// {1}: Name of the player.
+	"ZRC command infect successful"
+	{
+		"#format"	"{1:N}"
+		"en"		"Player {green}{1} {default}has been successfully infected."
+	}
+
+	// {1}: Name of the player.
+	"ZRC command infect mother successful"
+	{
+		"#format"	"{1:N}"
+		"en"		"Player {green}{1} {default}has been successfully infected as the mother zombie."
+	}
+
+	// {1}: Name of the player.
+	"ZRC command infect unsuccessful"
+	{
+		"#format"	"{1:N}"
+		"en"		"Player {green}{1} {default}is already a zombie."
+	}
+
+	// {1}: Name of the player.
+	"ZRC command human successful"
+	{
+		"#format"	"{1:N}"
+		"en"		"Player {green}{1} {default}has been successfully brought back as a human."
+	}
+
+	// {1}: Name of the player.
+	"ZRC command human unsuccessful"
+	{
+		"#format"	"{1:N}"
+		"en"		"Player {green}{1} {default}is already a human."
+	}
+
+	//                   Weapons		       //
+	/////////////////////////////////////////////////
+
+	"ZRC weapons zombie cant use weapon"
+	{
+		"en"		"Zombies can't use weapons!"
+	}
+}

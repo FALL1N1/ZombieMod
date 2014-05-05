@@ -1,0 +1,252 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.LogType=0
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+[Project tree]
+ZR
+	+Plugin
+		-Base Includes
+			..\src\zr\base\accessmanager.inc
+			..\src\zr\base\configmanager.inc
+			..\src\zr\base\eventmanager.inc
+			..\src\zr\base\logmanager.inc
+			..\src\zr\base\modulemanager.inc
+			..\src\zr\base\translationsmanager.inc
+			..\src\zr\base\versioninfo.inc
+			..\src\zr\base\wrappers.inc
+		-Interfaces
+			..\src\zr\interfaces\infection.interface.inc
+			..\src\zr\interfaces\interfaces.inc
+			..\src\zr\interfaces\soundprofiles.interface.inc
+		-Libraries
+			..\src\zr\libraries\authcachelib.inc
+			..\src\zr\libraries\conversionlib.inc
+			..\src\zr\libraries\cookielib.inc
+			..\src\zr\libraries\cvarlib.inc
+			..\src\zr\libraries\functionlib.inc
+			..\src\zr\libraries\menulib.inc
+			..\src\zr\libraries\offsetlib.inc
+			..\src\zr\libraries\overlaylib.inc
+			..\src\zr\libraries\sdktoolslib.inc
+			..\src\zr\libraries\shoppinglistlib.inc
+			..\src\zr\libraries\teamlib.inc
+			..\src\zr\libraries\utilities.inc
+			..\src\zr\libraries\weaponlib.inc
+		-Modules
+			-Classes
+				..\src\zr\modules\classes\attributeregister.inc
+				..\src\zr\modules\classes\attributetemplate.inc
+				..\src\zr\modules\classes\classfilter.inc
+				..\src\zr\modules\classes\classmanager.inc
+				..\src\zr\modules\classes\genericattributes.inc
+				..\src\zr\modules\classes\instantchange.inc
+				..\src\zr\modules\classes\model.inc
+				..\src\zr\modules\classes\nextindexes.inc
+			-Models
+				..\src\zr\modules\models\modelcollections.inc
+				..\src\zr\modules\models\modelcommands.inc
+				..\src\zr\modules\models\modeldb.inc
+				..\src\zr\modules\models\modelfilter.inc
+				..\src\zr\modules\models\modelmgr.inc
+			-Weapons
+				..\src\zr\modules\weapons\gpbridge.inc
+				..\src\zr\modules\weapons\weapons.inc
+				..\src\zr\modules\weapons\wepalpha.inc
+				..\src\zr\modules\weapons\wepmenus.inc
+				..\src\zr\modules\weapons\weprestrict.inc
+				..\src\zr\modules\weapons\zmarket.inc
+			-ZRC Core
+				..\src\zr\modules\zrc_core\damage.zrc.inc
+				..\src\zr\modules\zrc_core\gameplay.zrc.inc
+				..\src\zr\modules\zrc_core\infection.zrc.inc
+				..\src\zr\modules\zrc_core\root.zrc.inc
+				..\src\zr\modules\zrc_core\teammanager.zrc.inc
+				..\src\zr\modules\zrc_core\weapons.zrc.inc
+			-ZRiot Core
+				..\src\zr\modules\zriot_core\gameplay.zriot.inc
+				..\src\zr\modules\zriot_core\infection.zriot.inc
+				..\src\zr\modules\zriot_core\root.zriot.inc
+				..\src\zr\modules\zriot_core\stages.zriot.inc
+				..\src\zr\modules\zriot_core\teammanager.zriot.inc
+				..\src\zr\modules\zriot_core\weapons.zriot.inc
+			..\src\zr\modules\core.inc
+			..\src\zr\modules\downloader.inc
+			..\src\zr\modules\fog.inc
+			..\src\zr\modules\gamedata.inc
+			..\src\zr\modules\gamerules.inc
+			..\src\zr\modules\mapconfig.inc
+			..\src\zr\modules\moduletemplate.inc
+			..\src\zr\modules\napalm.inc
+			..\src\zr\modules\respawn.inc
+			..\src\zr\modules\sdkhooksadapter.inc
+			..\src\zr\modules\sfx.inc
+			..\src\zr\modules\soundprofiles.inc
+			..\src\zr\modules\speed.inc
+			..\src\zr\modules\stripobjectives.inc
+			..\src\zr\modules\suicideintercept.inc
+			..\src\zr\modules\zadmin.inc
+			..\src\zr\modules\zmenu.inc
+			..\src\zr\modules\zspawn.inc
+			..\src\zr\modules\ztele.inc
+	..\src\zr\project.inc
+	..\src\zr\project_events.inc
+	..\src\zombiereloaded.sp
+	-Plugin Includes
+		-Classes
+		-External API
+			..\src\zr\api\api.inc
+			..\src\zr\api\infect.api.inc
+			..\src\zr\api\log.api.inc
+			..\src\zr\api\respawn.api.inc
+			..\src\zr\api\tools.api.inc
+		-Sound Effects
+		-Visual Effects
+		-Volumetric
+		-Weapons
+			..\src\zr\weapons\ammomanager.inc
+			..\src\zr\weapons\ammoprofiles.inc
+			..\src\zr\weapons\weaponprofiles.inc
+			..\src\zr\weapons\weapons.inc
+			..\src\zr\weapons\wepalpha.inc
+			..\src\zr\weapons\wepmenus.inc
+			..\src\zr\weapons\weprestrict.inc
+			..\src\zr\weapons\zmarket.inc
+	-External API Includes
+		..\src\include\zombiereloaded.inc
+		..\src\include\zr\infect.zr.inc
+		..\src\include\zr\log.zr.inc
+		..\src\include\zr\respawn.zr.inc
+		..\src\include\zr\tools.zr.inc
+	-Config Files
+		..\cstrike\addons\sourcemod\configs\zr\downloads.txt
+		..\cstrike\addons\sourcemod\configs\zr\gamerules.txt
+		..\cstrike\addons\sourcemod\configs\zr\hitgroups.txt
+		..\cstrike\addons\sourcemod\configs\zr\models.txt
+		..\cstrike\addons\sourcemod\configs\zr\classes.txt
+		..\cstrike\addons\sourcemod\configs\zr\weapons.txt
+		..\cstrike\cfg\sourcemod\zombiereloaded\zombiereloaded.cfg
+		..\cstrike\cfg\sourcemod\zombiereloaded\zrclassic.cfg
+		..\cstrike\cfg\sourcemod\zombiereloaded\zriot.cfg
+	-SM Includes
+		..\env\include\admin.inc
+		..\env\include\adminmenu.inc
+		..\env\include\adt.inc
+		..\env\include\adt_array.inc
+		..\env\include\adt_stack.inc
+		..\env\include\adt_trie.inc
+		..\env\include\banning.inc
+		..\env\include\bitbuffer.inc
+		..\env\include\clientprefs.inc
+		..\env\include\clients.inc
+		..\env\include\colors.inc
+		..\env\include\commandfilters.inc
+		..\env\include\console.inc
+		..\env\include\core.inc
+		..\env\include\cstrike.inc
+		..\env\include\datapack.inc
+		..\env\include\dbi.inc
+		..\env\include\entity.inc
+		..\env\include\entity_prop_stocks.inc
+		..\env\include\events.inc
+		..\env\include\files.inc
+		..\env\include\float.inc
+		..\env\include\functions.inc
+		..\env\include\geoip.inc
+		..\env\include\halflife.inc
+		..\env\include\handles.inc
+		..\env\include\helpers.inc
+		..\env\include\keyvalues.inc
+		..\env\include\lang.inc
+		..\env\include\logging.inc
+		..\env\include\mapchooser.inc
+		..\env\include\menus.inc
+		..\env\include\nextmap.inc
+		..\env\include\profiler.inc
+		..\env\include\regex.inc
+		..\env\include\sdkhooks.inc
+		..\env\include\sdktools.inc
+		..\env\include\sdktools_engine.inc
+		..\env\include\sdktools_entinput.inc
+		..\env\include\sdktools_entoutput.inc
+		..\env\include\sdktools_functions.inc
+		..\env\include\sdktools_hooks.inc
+		..\env\include\sdktools_sound.inc
+		..\env\include\sdktools_stocks.inc
+		..\env\include\sdktools_stringtables.inc
+		..\env\include\sdktools_tempents.inc
+		..\env\include\sdktools_tempents_stocks.inc
+		..\env\include\sdktools_trace.inc
+		..\env\include\sdktools_voice.inc
+		..\env\include\sorting.inc
+		..\env\include\sourcemod.inc
+		..\env\include\string.inc
+		..\env\include\textparse.inc
+		..\env\include\tf2.inc
+		..\env\include\tf2_stocks.inc
+		..\env\include\timers.inc
+		..\env\include\topmenus.inc
+		..\env\include\usermessages.inc
+		..\env\include\vector.inc
+		..\env\include\version.inc
+	-SMLib
+		..\env\include\smlib.inc
+		..\env\include\smlib\smlib_arrays.inc
+		..\env\include\smlib\smlib_clients.inc
+		..\env\include\smlib\smlib_colors.inc
+		..\env\include\smlib\smlib_concommands.inc
+		..\env\include\smlib\smlib_convars.inc
+		..\env\include\smlib\smlib_crypt.inc
+		..\env\include\smlib\smlib_debug.inc
+		..\env\include\smlib\smlib_dynarrays.inc
+		..\env\include\smlib\smlib_edicts.inc
+		..\env\include\smlib\smlib_effects.inc
+		..\env\include\smlib\smlib_entities.inc
+		..\env\include\smlib\smlib_files.inc
+		..\env\include\smlib\smlib_game.inc
+		..\env\include\smlib\smlib_general.inc
+		..\env\include\smlib\smlib_math.inc
+		..\env\include\smlib\smlib_server.inc
+		..\env\include\smlib\smlib_sql.inc
+		..\env\include\smlib\smlib_strings.inc
+		..\env\include\smlib\smlib_teams.inc
+		..\env\include\smlib\smlib_vehicles.inc
+		..\env\include\smlib\smlib_weapons.inc
+		..\env\include\smlib\smlib_world.inc
+	-Gamedata
+		..\cstrike\addons\sourcemod\gamedata\plugin.zombiereloaded.txt
+	-Translations
+		..\cstrike\addons\sourcemod\translations\zombiereloaded\zombiereloaded.phrases.txt
+		..\cstrike\addons\sourcemod\translations\zombiereloaded\basecmd.phrases.txt
+		..\cstrike\addons\sourcemod\translations\zombiereloaded\configmanager.phrases.txt
+		..\cstrike\addons\sourcemod\translations\zombiereloaded\gamerules.phrases.txt
+		..\cstrike\addons\sourcemod\translations\zombiereloaded\logmanager.phrases.txt
+		..\cstrike\addons\sourcemod\translations\zombiereloaded\modelmgr.phrases.txt
+		..\cstrike\addons\sourcemod\translations\zombiereloaded\projectbase.phrases.txt
+		..\cstrike\addons\sourcemod\translations\zombiereloaded\respawn.phrases.txt
+		..\cstrike\addons\sourcemod\translations\zombiereloaded\soundprofiles.phrases.txt
+		..\cstrike\addons\sourcemod\translations\zombiereloaded\suicideintercept.phrases.txt
+		..\cstrike\addons\sourcemod\translations\zombiereloaded\weapons.phrases.txt
+		..\cstrike\addons\sourcemod\translations\zombiereloaded\zr.common.phrases.txt
+		..\cstrike\addons\sourcemod\translations\zombiereloaded\zrclassic.phrases.txt
+		..\cstrike\addons\sourcemod\translations\zombiereloaded\zriot.phrases.txt
+		..\cstrike\addons\sourcemod\translations\zombiereloaded\zspawn.phrases.txt
+		..\cstrike\addons\sourcemod\translations\zombiereloaded\ztele.phrases.txt
+[Open project files]
+0=..\src\zombiereloaded.sp
+1=..\src\zr\project.inc
+[Selected Project Files]
+Main=
+Selected=..\src\zombiereloaded.sp
+[..\src\zombiereloaded.sp]
+TopLine=1
+Caret=1,1
+[..\src\zr\project.inc]
+TopLine=1
+Caret=1,1

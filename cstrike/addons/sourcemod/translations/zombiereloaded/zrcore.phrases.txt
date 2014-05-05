@@ -1,0 +1,11 @@
+﻿"Phrases"
+{
+	// **********************************************
+	//                    ZR Core
+	// **********************************************
+
+	"zrcore refuse disable generic"
+	{
+		"en"		"Module cannot be disabled."
+	}
+}

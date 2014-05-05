@@ -1,0 +1,41 @@
+"Games"
+{
+	"#default"
+	{
+		"#supported"
+		{
+			"game"			"cstrike"
+		}
+
+		"Keys"
+		{
+			"NumSuicideCmds"	"5"
+			"SuicideCmd1"		"kill"
+			"SuicideCmd2"		"explode"
+			"SuicideCmd3"		"spectate"
+			"SuicideCmd4"		"jointeam"
+			"SuicideCmd5"		"joinclass"
+		}
+
+		"Offsets"
+		{
+			"FlashlightIsOn"
+			{
+				"windows"	"346"
+				"linux"		"347"
+			}
+
+			"FlashlightTurnOn"
+			{
+				"windows"	"347"
+				"linux"		"348"
+			}
+
+			"FlashlightTurnOff"
+			{
+				"windows"	"348"
+				"linux"		"349"
+			}
+		}
+	}
+}

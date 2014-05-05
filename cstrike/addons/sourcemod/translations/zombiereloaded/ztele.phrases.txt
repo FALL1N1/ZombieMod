@@ -1,0 +1,96 @@
+"Phrases"
+{
+	// **********************************************
+	//                  ZTele Module
+	// **********************************************
+
+	"ZTele restricted round not active"
+	{
+		"en"		"The round has not started yet."
+	}
+
+	"ZTele restricted zombie"
+	{
+		"en"		"ZTele is restricted for zombies."
+	}
+
+	"ZTele restricted human"
+	{
+		"en"		"ZTele is restricted for humans at this time."
+	}
+
+	// {1}: Max number of teleports allowed per round.
+	"ZTele max"
+	{
+		"#format"	"{1:d}"
+		"en"		"You have reached your max of {1} teleport(s) per round."
+	}
+
+	"ZTele in progress"
+	{
+		"en"		"You are currently pending teleportation."
+	}
+
+	// {1} The value of cvar zr_ztele_autocancel_distance.
+	"ZTele autocancel"
+	{
+		"#format"	"{1:s}"
+		"en"		"Teleport has been cancelled.  (Restrictive boundary is {1}.)"
+	}
+
+	// {1}: Time left before teleporting.
+	"ZTele countdown"
+	{
+		"#format"	"{1:d}"
+		"en"		"Teleporting in: {1} seconds."
+	}
+
+	"ZTele cancel"
+	{
+		"en"		"Teleport has been cancelled."
+	}
+
+	// {1}: Number of teleports used this round.
+	// {2}: Number of teleports allowed per round.
+	"ZTele countdown end"
+	{
+		"#format"	"{1:d},{2:d}"
+		"en"		"Teleportation successful (Count: {1}/{2})"
+	}
+
+	"ZTele zmenu button"
+	{
+		"en"		"ZTele - Stuck?  Teleport back to spawn"
+	}
+
+	"ZTele zadmin button"
+	{
+		"en"		"Force ZTele"
+	}
+
+	"ZTele menu clients title"
+	{
+		"en"		"Force ZTele (zr_ztele_force)\nSelect a Player:"
+	}
+
+	// As in "this person is currently teleporting"
+	"ZTele teleporting"
+	{
+		"en"		"teleporting"
+	}
+
+	// {1}: PROJECT_CMD_PREFIX
+	"ZTele command syntax"
+	{
+		"#format"	"{1:s}"
+		"en"		"ZTele a client. Usage: {1}_ztele_force <client>"
+
+	}
+
+	"ZTele command successful"
+	{
+		"#format"	"{1:N}"
+		"en"		"Player {1} was successfully teleported."
+	}
+
+}

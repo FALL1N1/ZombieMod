@@ -1,0 +1,46 @@
+"Phrases"
+{
+	// **********************************************
+	//               Zombie:Riot Core
+	// **********************************************
+
+	//                    Stages                   //
+	/////////////////////////////////////////////////
+
+	// {1}: Config file path.
+	"ZRiot stages refuse enable"
+	{
+		"#format"	"{1:s}"
+		"en"		"Stages module failed to enable because it can't load any data from its defined config file: \"{1}\""
+	}
+
+	//                  Gameplay		       //
+	/////////////////////////////////////////////////
+
+	"ZRiot gameplay round objective"
+	{
+		"en"		"The game is {green}Humans vs. Zombies{default}, humans must kill all zombies in order to advance to the next stage."
+	}
+
+	// {1}: Name of player joining team.
+	"ZRiot join team zombies"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} is joining the Zombie force."
+	}
+
+	// {1}: Name of player joining team.
+	"ZRiot join team humans"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} is joining the Human force."
+	}
+
+	//                   Weapons		       //
+	/////////////////////////////////////////////////
+
+	"ZRiot weapons zombie cant use weapon"
+	{
+		"en"		"Zombies can't use weapons!"
+	}
+}

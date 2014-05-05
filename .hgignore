@@ -1,0 +1,15 @@
+# use glob syntax.
+syntax: glob
+
+src/zr/base/vcsversion.inc
+docs/changes.diff
+docs/changes/*
+
+build/*
+release/*
+
+patch.diff
+patch.txt
+
+.DS_Store
+

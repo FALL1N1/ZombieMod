@@ -1,0 +1,27 @@
+"Phrases"
+{
+	"Config file reloaded successfully"
+	{
+		"#format"	"{1:s}"
+		"en"		"Successfully reloaded config file: \"{1}\""
+	}
+
+	// Command: PROJECT_BASE_CMD config reload
+
+	// {1-2}: PROJECT_CMD_PREFIX
+	"ConfigMgr basecmd reload usage"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"Reloads a module's config files.  Usage: {1} config reload <moduleshortname> [module2] ...\nRelated command(s): {2} config reload_all"
+	}
+
+	// Command: <PROJECT_CMD_PREFIX>_reload_config
+
+	// {1-2}: PROJECT_CMD_PREFIX
+	"ConfigMgr cmd reloadconfig usage"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"Reloads a module's config files.  Usage: {1}_reload_config <moduleshortname> [module2] ...\nRelated command(s): {2}_reload_config_all"
+	}
+
+}

@@ -1,0 +1,26 @@
+"Phrases"
+{
+
+	// **********************************************
+	//                  ZSpawn Module
+	// **********************************************
+
+	"ZSpawn double spawn"
+	{
+		"en"		"ZSpawn can only be used if you joined late during a round in progress."
+	}
+
+	// {1}: The timelimit to use ZSpawn.
+	"ZSpawn timelimit"
+	{
+		"#format"	"{1:d}"
+		"en"		"The timelimit ({1} seconds), to use ZSpawn, has already expired."
+	}
+
+	"ZSpawn zmenu button"
+	{
+		"en"		"ZSpawn - Join late?  Spawn with this"
+	}
+
+}
+

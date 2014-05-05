@@ -1,0 +1,13 @@
+﻿"Phrases"
+{
+	// **********************************************
+	//                  Class Module
+	// **********************************************
+
+	"Class main menu title"
+	{
+		"en"		"Class Selection"
+		"no"		"Klassevalg"
+	}
+
+}

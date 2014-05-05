@@ -1,0 +1,51 @@
+// ============================================================================
+//
+//                              ZOMBIE:RELOADED
+//                        Ammo Profile configuration
+//
+// See Ammo Profile Configuration (3.x) section in the manual for detailed
+// info.
+//
+// ============================================================================
+//
+// SHORT DESCRIPTIONS
+//
+// Section name:    A unique name for each ammo profile. There MUST be section
+//                  named "default" that represent default settings for all
+//                  weapons.
+//
+// Attribute:       Description:
+// ----------------------------------------------------------------------------
+// mode             A ammo mode that specifies weapon behavior. Options:
+//                  "disabled"      - Do nothing but setting clip settings.
+//                  "unlimited"     - Remove need for reloading. Unlimited bullets in clip.
+//                  "fill_clip"     - Give "amount" bullets to clip every "interval" second as long it's below "max".
+//                  "fill_reserve"  - Same as fill_clip, but on clip reserve.
+//
+// clip_size        Maximum number of bullets in primary weapon clip. Use "-1"
+//                  to ignore setting (do nothing with clip).
+//
+// clip_reserve     Maximum number of bullets in primary weapon clip reserve.
+//                  Use "-1" to ignore setting (do nothing with clip reserve).
+//
+// interval         How often to fill clip or clip reserve. Time is in seconds.
+//                  Set to "0" to disable. Note: Mode must be fill_clip or
+//                  fill_reserve for this setting to take effect.
+//
+// amount           Number of bullets to give per interval.
+//
+// max              Refill limit. Stop giving bullets if this value is reached.
+//                  If it goes below the limit again, refilling will continue.
+
+"ammoprofiles"
+{
+    "default"
+    {
+        "mode"          "disabled"
+        "clip_size"     "-1"
+        "clip_reserve"  "-1"
+        "interval"      "0"
+        "amount"        "0"
+        "max"           "0"
+    }
+}

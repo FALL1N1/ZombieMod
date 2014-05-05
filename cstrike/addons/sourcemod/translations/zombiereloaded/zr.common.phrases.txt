@@ -1,0 +1,120 @@
+"Phrases"
+{
+	// **********************************************
+	//               Common ZR Phrases
+	// **********************************************
+
+	"Feature is disabled"
+	{
+		"en"		"This feature is currently disabled."
+	}
+
+	"Not enough money"
+	{
+		"en"		"You do not have enough money to buy this item."
+	}
+
+	"Must be player"
+	{
+		"en"		"Only in-game players can use this."
+	}
+
+	"Must be admin"
+	{
+		"en"		"Admin only!"
+	}
+
+	"No access to command"
+	{
+		"en"		"You do not have access to this command."
+	}
+
+	"Must be alive"
+	{
+		"en"		"You have to be alive for this."
+	}
+
+	"Must be dead"
+	{
+		"en"		"You have to be dead for this."
+	}
+
+	"Must be on team"
+	{
+		"en"		"You need to be on a team for this."
+	}
+
+	"Must be zombie"
+	{
+		"en"		"Only zombies can use this."
+	}
+
+	"Must be human"
+	{
+		"en"		"Only humans can use this."
+	}
+
+	//
+	// General adjectives
+	//
+
+	"ZR alive"
+	{
+		"en"		"Alive"
+	}
+
+	"ZR dead"
+	{
+		"en"		"Dead"
+	}
+
+	//
+	//   Teams
+	//
+
+	"ZR team zombies"
+	{
+		"en"		"Zombies"
+	}
+
+	"ZR team humans"
+	{
+		"en"		"Humans"
+	}
+
+	"ZR team zombie"
+	{
+		"en"		"Zombie"
+	}
+
+	"ZR team human"
+	{
+		"en"		"Human"
+	}
+
+	"ZR team both"
+	{
+		"en"		"Both teams"
+	}
+
+
+	//
+	//   Headers
+	//
+
+	"ZR header index"
+	{
+		"en"		"Index:"
+	}
+
+	"ZR header team"
+	{
+		"en"		"Team:"
+	}
+
+	"ZR header name"
+	{
+		"en"		"Name:"
+	}
+
+}

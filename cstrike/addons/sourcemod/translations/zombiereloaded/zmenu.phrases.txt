@@ -1,0 +1,11 @@
+"Phrases"
+{
+	// **********************************************
+	//                  ZMenu Module
+	// **********************************************
+
+	"ZMenu title"
+	{
+		"en"		"Zombie:Reloaded Commands:\nPrefix command with \"!\" or \"/\" (silent) when typing in chat."
+	}
+}

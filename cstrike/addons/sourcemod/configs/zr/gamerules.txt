@@ -1,0 +1,64 @@
+// ============================================================================
+//
+//                              ZOMBIE:RELOADED
+//                        Game Rule Set Configuration
+//
+// See Game Rule Set Configuration (3.x) section in the manual for detailed
+// info.
+//
+// ============================================================================
+//
+// Each ruleset (aka game mode or GRS) is defined in this file.
+// Choose a ruleset with the command zr_nextruleset.  The ruleset set with this command will take affect on next map change.
+//
+// Note: Since zr_nextruleset can't be used before map start on server boot, it will use the first ruleset defined here.
+//
+// Available rules for each GRS/game mode include:
+// "core"		- The root module that should be enabled.  Each GRS can only have 1 core enabled, all others will be forced off.
+//			Don't touch this if you don't know what you are doing.
+// "configs"		- The config files to load for this ruleset.  Options:
+//	"cvars"		- The executable .cfg file relative to cfg/ to execute when this game ruleset is applied.
+//	"cfgfolder"	- The folder that the config folder exist under.  Must end with "/".  Note: gamerules will look for config files
+//			in directories either with the same name as the current map, or partial match.
+//
+// "modulecmds"	 	- Specific module commands.  Options:
+//	"<modulename>"	- Valid commands:
+//		"on"		- Module will be enabled when this is applied.
+//		"force_on"	- Module will be locked into the enabled state.
+//		"off"		- Module will be disabled when this is applied.
+//		"force_off"	- Module will be locked into the disabled state.
+//	"<modulename2>"
+//	"etc"
+
+"gamerules"
+{
+	"zrclassic"
+	{
+		"core"			"zrc_root"
+
+		"configs"
+		{
+			"cvars"		"sourcemod/zombiereloaded/zrclassic.cfg"
+			"cfgfolder"	"configs/zr/zrclassic/"
+		}
+
+		"modulecmds"
+		{
+		}
+	}
+
+	"zriot"
+	{
+		"core"			"zriot_root"
+
+		"configs"
+		{
+			"cvars"		"sourcemod/zombiereloaded/zriot.cfg"
+			"cfgfolder"	"configs/zr/zriot/"
+		}
+
+		"modulecmds"
+		{
+		}
+	}
+}

@@ -1,0 +1,42 @@
+/**
+ * Template instructions:
+ * 
+ * All module-specific text has been replaced with text enclosed in <>
+ * This is to make preparing this file to become the module you need easier.
+ * Simply search-and-replace (usually CTRL+H) each of the tags below and replace it with the module specifics.
+ * 
+ * Tags:
+ * <FuncPrefix>         The prefix of your module's functions.  Usually the module's full name with no whitespaces.
+ * <ModuleVarName>      Usually the same as <FuncPrefix>.  Names the global variable that stores this module's identifier.
+ * 
+ * Remove these instructions after all text replacement operations are completed.
+ */
+
+/**
+ * Register all events here.
+ */
+public <FuncPrefix>_OnEventsRegister()
+{
+    // Register all the events needed for this module.
+    //EventMgr_RegisterEvent(g_module<ModuleVarName>, "Event_OnMyCoreShutdown",         "<FuncPrefix>_OnMyCoreShutdown");
+    //EventMgr_RegisterEvent(g_module<ModuleVarName>, "Event_OnMyCoreActivate",         "<FuncPrefix>_OnMyCoreActivate");
+    //EventMgr_RegisterEvent(g_module<ModuleVarName>, "Event_OnGameRulesApplied",       "<FuncPrefix>_OnGameRulesApplied");
+}
+
+/**
+ * Called when a game mode is shutting down right before <FuncPrefix>_OnMyCoreActivate.
+ * 
+ * @param module    The core module being shut down.
+ */
+public <FuncPrefix>_OnMyCoreShutdown(Module:module)
+{
+}
+
+/**
+ * Called when a game mode is activating.
+ * 
+ * @param module    The core module being activated.
+ */
+public <FuncPrefix>_OnMyCoreActivate(Module:module)
+{
+}

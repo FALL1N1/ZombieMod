@@ -1,0 +1,55 @@
+// ============================================================================
+//
+//                              ZOMBIE:RELOADED
+//                           Downloads configuration
+//
+// See Download List (3.6) section in the manual for detailed info.
+//
+// ============================================================================
+// * Each uncommented line will be used as a file path for clients to download.
+// * Refering to a folder will add all files in it. (non-recursive)
+// * Wildcards may be used.  See examples for more info.
+// * When listing any files that contain either "[" or "]" in the name, you MUST list it literally. (first example)
+// ----------------------------------------------------------------------------
+// Examples:
+// ----------------------------------------------------------------------------
+// * Adding a single, literally listed, file:
+// 	materials/models/player/zh/Charple1_sheet.vmt
+//	materials/models/player/ics/hellknight_red/hellknight.vmt
+// This method is rather tedious and more often than not, unnecessary.
+//
+// * Adding an entire folder of files:
+//	materials/models/player/zh/
+//	materials/models/player/zh
+// The entries above are equivalent, the "/" isn't required although it is easier to identify the entry as a folder if it's there.
+// This method cuts down the amount of lines significantly, but the drawback is that you can't filter out any files that lie within.
+//
+// * Using wildcards to set conditions on the filename to be added to the download table:
+//
+//	materials/overlays/zr/*_win.*
+//
+// "*" is refered to as a "wildcard" because it acts as a replacement for any string.
+// Any file that has something + "_win." + something will be added to the download table.
+// Which means those pesky .ztmp files will pass this check (we don't want clients to download .ztmp files)
+// Nonetheless, this is an improvement from the previous example, but we can do better.
+//
+// 	materials/overlays/zr/*_win.???
+//
+// "?" is another wildcard character that is similar to "*".  The difference is it acts as a replacement for any CHARACTER, not a string.
+// Basically, it's a limited version of "*".  The entry above will behave like the one previous to it, with the exception that it will only
+// accept 3 characters after "." symbol.  While this prunes out the .ztmp files, we can still do even better.
+//
+//	materials/overlays/zr/*_win.v[mt][tf]
+//
+// "[]" is actually a "metacharacter" that's used in regular expressions.  Each character within the brackets will be tried individually in order
+// to test if the filename will pass.  To better illustrate this, here are the possible file extensions that would pass the expression "v[mt][tf]":
+// "vmt", "vmf", "vtt", "vtf"
+// ----------------------------------------------------------------------------
+// Defaults:
+// ----------------------------------------------------------------------------
+
+// Classic zombie materials.
+materials/models/player/zh/
+
+// Hellknight materials
+materials/models/player/ics/hellknight_red/*.v[mt][tf]

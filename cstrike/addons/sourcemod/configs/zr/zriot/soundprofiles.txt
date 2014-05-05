@@ -1,0 +1,7 @@
+"soundprofiles"
+{
+	"infection"
+	{
+		"sound" { "path" "npc/fast_zombie/fz_scream1.wav" }
+	}
+}

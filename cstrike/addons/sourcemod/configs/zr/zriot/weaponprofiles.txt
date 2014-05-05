@@ -1,0 +1,33 @@
+// ============================================================================
+//
+//                              ZOMBIE:RELOADED
+//                       Weapon Profile configuration
+//
+// See Weapon Profile Configuration (3.x) section in the manual for detailed
+// info.
+//
+// ============================================================================
+//
+// SHORT DESCRIPTIONS
+//
+// Section name:    A unique name for each weapon profile. There MUST be section
+//                  named "default" that represent default settings for all
+//                  weapons.
+//
+// Attribute:               Description:
+// ----------------------------------------------------------------------------
+// primary_ammo_profile     Name of ammo profile for primary weapons.
+// secondary_ammo_profile   Name of ammo profile for secondary weapons.
+// restriction_profile      Name of weapon restriction profile.
+//                          Predefined options:
+//                          "disabled" - Use global restriction settings.
+
+"weaponprofiles"
+{
+    "default"
+    {
+        "primary_ammo_profile"      "default"
+        "secondary_ammo_profile"    "default"
+        "restriction_profile"       "disabled"
+    }
+}

@@ -1,0 +1,79 @@
+/*
+ * ============================================================================
+ *
+ *  Zombie:Reloaded
+ *
+ *  File:          interfaces.txt
+ *  Type:          Documentation
+ *  Description:   Introduction to interfaces
+ *
+ *  Copyright (C) 2009-2010  Greyscale, Richard Helgeby
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * ============================================================================
+ */
+
+Interfaces are a really simple and elegant method of allowing modules to use
+common functions between different game cores.  For example, ZR classic and
+ZRiot share many common functions, like they share the class system, which
+means they share a function that turns a player into a zombie.  Now what if
+a module, that wants to support both ZRC and ZRiot, were to try and make someone
+a zombie?  They would have to check the game mode and call the corresponding
+function.  That not only requires hardcoding in checks of specific game modes
+but it means that module wouldn't compile (without editing) unless both the ZRC
+and ZRiot cores are in the compilation.  To eliminate both of these problems
+we created the idea of interfacing and this is how it works:
+
+Interfaces are a layer between modules and the game mode cores.  Instead of
+the module directly calling a game mode's function, it calls an inferface function.
+They typically follow this format:
+
+I<Category>_CoreFunctionName(parameters..)
+{
+}
+
+For example:
+
+IInfection_ZombieToHuman(client)
+{
+}
+
+Inside these functions they dynamically call the function that corresponds to the correct
+game mode.  To avoid the same problem we mentioned before, we don't check the game mode
+in the middle of the call.  Instead we have the game core set a variable that stores
+the function ID of the target function.  When the game core shuts down, it will clear these
+variables for the next game mode to set.
+
+Example:
+
+new Function:g_IInfectionHumanToZombie;
+
+And a "setter" function to complement it:
+
+IInfection_SetHumanToZombie(Function:func) { g_IInfectionHumanToZombie = func; }
+
+The ZRC game mode would do something like:
+
+IInfection_SetHumanToZombie(GetFunctionByName(GetMyHandle(), "ZRC_HumanToZombie");
+
+in ZRC_OnMyCoreActivate()
+
+and:
+
+IInfection_SetHumanToZombie(INVALID_FUNCTION);
+
+in ZRC_OnMyCoreShutdown()
+
+Add all interfaces to modules/interfaces.

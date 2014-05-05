@@ -1,0 +1,38 @@
+"Phrases"
+{
+	// **********************************************
+	//              Class Manager Module
+	// **********************************************
+
+	"ClassMgr refuse enable"
+	{
+		"en"		"Class Manager refused to load because it couldn't retrieve any usable data from file."
+	}
+
+	// Menus
+	"ClassMgr main menu title"
+	{
+		"en"		"Class Selection:"
+	}
+
+	"ClassMgr menu current class"
+	{
+		"en"		"Current class:"
+	}
+
+	"ClassMgr menu next class"
+	{
+		"en"		"Next class:"
+	}
+
+	"ClassMgr menu select human"
+	{
+		"en"		"Select Human Class"
+	}
+
+	"ClassMgr menu select zombie"
+	{
+		"en"		"Select Zombie Class"
+	}
+
+}

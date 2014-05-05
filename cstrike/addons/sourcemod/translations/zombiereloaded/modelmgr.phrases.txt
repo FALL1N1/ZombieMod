@@ -1,0 +1,43 @@
+"Phrases"
+{
+	// **********************************************
+	//              Model Manager Module
+	// **********************************************
+
+	"ModelMgr models refuse enable"
+	{
+		"en"		"Model manager refused to load because it couldn't retrieve any usable data from models config file."
+	}
+
+	"ModelMgr model collections refuse enable"
+	{
+		"en"		"Model manager refused to load because it couldn't retrieve any usable data from file model collections config file."
+	}
+
+	"ModelMgr no models found"
+	{
+		"en"		"No models found."
+	}
+
+	"ModelMgr header index"
+	{
+		"en"		"Index:"
+	}
+
+	"ModelMgr header team"
+	{
+		"en"		"Team:"
+	}
+
+	"ModelMgr header name"
+	{
+		"en"		"Name:"
+	}
+
+	"ModelMgr list syntax"
+	{
+		"#format"	"{1:s}"
+		"en"		"Lists all models. Usage: {1}_models_list [<client target> <query>]"
+	}
+
+}

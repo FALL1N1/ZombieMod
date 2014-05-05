@@ -1,0 +1,664 @@
+// ============================================================================
+//
+//                    Zombie:Reloaded Class configuration
+//
+// See Class Configuration (3.7) in the manual for detailed info.
+//
+// ============================================================================
+//
+// Max classes: 48
+//
+// There MUST be one zombie and one human class with these requirements:
+//   - marked as team default
+//   - not a admin class
+//   - not a mother zombie class
+//   - no group specified ("")
+//
+// SHORT DESCRIPTIONS
+//
+// Section name: Unique user defined name to identify the class. The name is
+//               case insensitive.
+//
+// Attribute:               Values:     Description:
+// ----------------------------------------------------------------------------
+// enabled                  yes/no      Enables or disables a class.
+// team                     text        Specifies which team the class belongs to. Options:
+//                                      "zombies"
+//                                      "humans"
+// team_default             yes/no      Marks the class as the default class in its team.
+// is_admin_class           yes/no      Marks the class for admins only.
+// is_mother_zombie         yes/no      Marks the class for mother zombies only. Applies to zombie classes only.
+// auth_mode                text        Authorization mode for the class. Options:
+//                                      "disabled" - No authorization. Everyone can use the class.
+//                                      "flag"     - Player must have at least one of the flags.
+//                                      "group"    - Player must be in at least one of the groups.
+//                                      "either"   - Player must either have one of the flags or be in one of the groups.
+//                                      "both"     - Player must both have one of the flags and be in one of the groups.
+//                                      "all"      - Player must have all flags and be in all groups.
+// flags                    text        List of flag names to authorize. Separated by comma (,). See auth_mode.
+// groups                   text        List of groups to authorize. Separated by comma (,). See auth_mode.
+// display_name             text        The class name used in class menu.
+// description              text        Optional. The class description used in class menu.
+// model                    text        Name of model to use, or predefined filter option.
+// alpha_mode               text        Alpha blending mode. Options: none, switch, switch_once, linear and exp.
+// alpha_invert             yes/no      Invert alpha blending (transparent when low health, opaque when high health).
+// alpha_health             number      Health level (switch mode) or minimum health level (fading modes).
+// alpha_min                number      Minimum alpha value.
+// alpha_max                number      Maximum alpha value.
+// alpha_min_dist           number      Minimum fade distance.
+// alpha_max_dist           number      Maximum fade distance.
+// overlay_path             text        Overlay displayed at the player.
+// nvgs                     yes/no      Give and turn on night vision.
+// fov                      number      Field of view value. 90 is default.
+// has_napalm               yes/no      Allows player to throw napalm grenades. Humans only.
+// napalm_time              decimal     Napalm burn duration. Zombies only.
+// immunity_mode            number      Sets the immunity mode.
+// immunity_amount          decimal     Sets the immunity value.
+// no_fall_damage           on/off      Disables fall damage.
+// weapon_profile           text        Weapon profile to use, for ammo control and weapon restrictions. Humans only.
+// health                   number      How many health points to give.
+// health_regen_interval    decimal     Sets the regeneration interval. 0 to disable.
+// health_regen_amount      number      How much HP to give per interval.
+// health_infect_gain       number      How much HP to give when the player infects someone. Zombies only.
+// kill_bonus               number      How many points to give per kill. Zombies only.
+// speed                    decimal     The player's run speed.  0.0 is the default run speed.
+// knockback                decimal     Force of the knockback when shot at. Zombies only.
+// jump_height              decimal     Multiplier of the players jump height. 0.0 means no jump boost, 1.0 is normal.
+// jump_distance            decimal     Multiplier of the players jump distance. 0.0 means no forward jump boost, 1.0 is normal.
+
+"classes"
+{
+    // ------------------------------------------
+    //
+    // Zombie classes
+    //
+    // ------------------------------------------
+    "zombie_classic"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "zombies"
+        "team_default"          "yes"
+        "is_admin_class"        "no"
+        "is_mother_zombie"      "no"
+        
+        "auth_mode"             "disabled"
+        "flags"                 ""
+        "groups"                ""
+        
+        "display_name"          "Classic"
+        "description"           "Need brains!!! Arrrrggghh!"
+        
+        // Model
+        "model"                 "zh_charple001"
+        "alpha_mode"            "none"
+        "alpha_invert"          "no"
+        "alpha_health"          "1000"
+        "alpha_min"             "0"
+        "alpha_max"             "255"
+        "alpha_min_dist"        "0"
+        "alpha_max_dist"        "0"
+        
+        // Hud
+        //"overlay_path"          "overlays/zr/zvision"
+        //"nvgs"                  "no"
+        //"fov"                   "90"
+        
+        // Effects
+        //"has_napalm"            "no"
+        //"napalm_time"           "10.0"
+        
+        // Player behaviour
+        //"immunity_mode"         "0"
+        //"immunity_amount"       "0.0"
+        //"no_fall_damage"        "yes"
+        //"weapon_profile"        ""
+        
+        //"health"                "1000"
+        //"health_regen_interval" "0.0"
+        //"health_regen_amount"   "0"
+        //"health_infect_gain"    "700"
+        //"kill_bonus"            "2"
+        
+        //"speed"                 "75"
+        //"knockback"             "4"
+        //"jump_height"           "1.1"
+        //"jump_distance"         "1.2"
+    }
+    
+    "zombie_fast"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "zombies"
+        "team_default"          "no"
+        "is_admin_class"        "no"
+        "is_mother_zombie"      "no"
+        
+        "auth_mode"             "disabled"
+        "flags"                 ""
+        "groups"                ""
+        
+        "display_name"          "Fast"
+        "description"           "-HP | +Speed | +Jump | +Knockback"
+        
+        // Model
+        "model"                 "zh_corpse002"
+        "alpha_mode"            "none"
+        "alpha_invert"          "no"
+        "alpha_health"          "1000"
+        "alpha_min"             "0"
+        "alpha_max"             "255"
+        "alpha_min_dist"        "0"
+        "alpha_max_dist"        "0"
+        
+        // Hud
+        //"overlay_path"          "overlays/zr/zvision"
+        //"nvgs"                  "no"
+        //"fov"                   "90"
+        
+        // Effects
+        //"has_napalm"            "no"
+        //"napalm_time"           "5.0"
+        
+        // Player behaviour
+        //"immunity_mode"         "0"
+        //"immunity_amount"       "0.0"
+        //"no_fall_damage"        "yes"
+        //"weapon_profile"        ""
+        
+        //"health"                "750"
+        //"health_regen_interval" "0.0"
+        //"health_regen_amount"   "0"
+        //"health_infect_gain"    "500"
+        //"kill_bonus"            "2"
+        
+        //"speed"                 "100"
+        //"knockback"             "4.5"
+        //"jump_height"           "1.3"
+        //"jump_distance"         "1.2"
+    }
+    
+    "zombie_mutated"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "zombies"
+        "team_default"          "no"
+        "is_admin_class"        "no"
+        "is_mother_zombie"      "no"
+        
+        "auth_mode"             "disabled"
+        "flags"                 ""
+        "groups"                ""
+        
+        "display_name"          "Mutated"
+        "description"           "+HP | -Speed | +Jump | +Knockback"
+        
+        // Model
+        "model"                 "zh_zombie003"
+        "alpha_mode"            "none"
+        "alpha_invert"          "no"
+        "alpha_health"          "1000"
+        "alpha_min"             "0"
+        "alpha_max"             "255"
+        "alpha_min_dist"        "0"
+        "alpha_max_dist"        "0"
+        
+        // Hud
+        //"overlay_path"          "overlays/zr/zvision"
+        //"nvgs"                  "no"
+        //"fov"                   "90"
+        
+        // Effects
+        //"has_napalm"            "no"
+        //"napalm_time"           "15.0"
+        
+        // Player behaviour
+        //"immunity_mode"         "0"
+        //"immunity_amount"       "0.0"
+        //"no_fall_damage"        "yes"
+        //"weapon_profile"        ""
+        
+        //"health"                "1300"
+        //"health_regen_interval" "0.0"
+        //"health_regen_amount"   "0"
+        //"health_infect_gain"    "850"
+        //"kill_bonus"            "2"
+        
+        //"speed"                 "-25"
+        //"knockback"             "4.5"
+        //"jump_height"           "1.3"
+        //"jump_distance"         "1.3"
+    }
+    
+    "zombie_heavy"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "zombies"
+        "team_default"          "no"
+        "is_admin_class"        "no"
+        "is_mother_zombie"      "no"
+        
+        "auth_mode"             "disabled"
+        "flags"                 ""
+        "groups"                ""
+        
+        "display_name"          "Heavy"
+        "description"           "+HP | -Speed | -Jump | -Knockback"
+        
+        // Model
+        "model"                 "t_guerilla"
+        "alpha_mode"            "none"
+        "alpha_invert"          "no"
+        "alpha_health"          "1000"
+        "alpha_min"             "0"
+        "alpha_max"             "255"
+        "alpha_min_dist"        "0"
+        "alpha_max_dist"        "0"
+        
+        // Hud
+        //"overlay_path"          "overlays/zr/zvision"
+        //"nvgs"                  "no"
+        //"fov"                   "90"
+        
+        // Effects
+        //"has_napalm"            "no"
+        //"napalm_time"           "20.0"
+        
+        // Player behaviour
+        //"immunity_mode"         "0"
+        //"immunity_amount"       "0.0"
+        //"no_fall_damage"        "yes"
+        //"weapon_profile"        ""
+        
+        //"health"                "2000"
+        //"health_regen_interval" "0.0"
+        //"health_regen_amount"   "0"
+        //"health_infect_gain"    "1000"
+        //"kill_bonus"            "2"
+        
+        //"speed"                 "-20"
+        //"knockback"             "2.5"
+        //"jump_height"           "0.9"
+        //"jump_distance"         "0.9"
+    }
+    
+    "mother_zombie"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "zombies"
+        "team_default"          "no"
+        "is_admin_class"        "no"
+        "is_mother_zombie"      "yes"
+        
+        "auth_mode"             "disabled"
+        "flags"                 ""
+        "groups"                ""
+        
+        "display_name"          "Mother zombie"
+        "description"           "+HP regen | +Speed | +Jump | -Knockback"
+        
+        // Model
+        "model"                 "zh_charple001"
+        "alpha_mode"            "none"
+        "alpha_invert"          "no"
+        "alpha_health"          "1000"
+        "alpha_min"             "0"
+        "alpha_max"             "255"
+        "alpha_min_dist"        "0"
+        "alpha_max_dist"        "0"
+        
+        // Hud
+        //"overlay_path"          "overlays/zr/zvision"
+        //"nvgs"                  "no"
+        //"fov"                   "110"
+        
+        // Effects
+        //"has_napalm"            "0"
+        //"napalm_time"           "5.0"
+        
+        // Player behaviour
+        //"immunity_mode"         "0"
+        //"immunity_amount"       "0.0"
+        //"no_fall_damage"        "yes"
+        //"weapon_profile"        ""
+        
+        //"health"                "2000"
+        //"health_regen_interval" "0.25"
+        //"health_regen_amount"   "10"
+        //"health_infect_gain"    "700"
+        //"kill_bonus"            "4"
+        
+        //"speed"                 "110"
+        //"knockback"             "2.5"
+        //"jump_height"           "1.2"
+        //"jump_distance"         "1.3"
+    }
+    
+    "mother_zombie_admin"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "zombies"
+        "team_default"          "no"
+        "is_admin_class"        "yes"
+        "is_mother_zombie"      "yes"
+        
+        "auth_mode"             "disabled"
+        "flags"                 ""
+        "groups"                ""
+        
+        "display_name"          "Admin mother zombie"
+        "description"           "+HP regen | +Speed | +Jump | -Knockback"
+        
+        // Model
+        "model"                 "zh_charple001"
+        "alpha_mode"            "none"
+        "alpha_invert"          "no"
+        "alpha_health"          "1000"
+        "alpha_min"             "0"
+        "alpha_max"             "255"
+        "alpha_min_dist"        "0"
+        "alpha_max_dist"        "0"
+        
+        // Hud
+        //"overlay_path"          "overlays/zr/zvision"
+        //"nvgs"                  "no"
+        //"fov"                   "110"
+        
+        // Effects
+        //"has_napalm"            "no"
+        //"napalm_time"           "3.0"
+        
+        // Player behaviour
+        //"immunity_mode"         "0"
+        //"immunity_amount"       "0.0"
+        //"no_fall_damage"        "yes"
+        //"weapon_profile"        ""
+        
+        //"health"                "3000"
+        //"health_regen_interval" "0.25"
+        //"health_regen_amount"   "10"
+        //"health_infect_gain"    "700"
+        //"kill_bonus"            "1"
+        
+        //"speed"                 "115"
+        //"knockback"             "2.3"
+        //"jump_height"           "1.2"
+        //"jump_distance"         "1.3"
+    }
+    
+    // ------------------------------------------
+    //
+    // Human classes
+    //
+    // ------------------------------------------
+    
+    "human_normal"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "humans"
+        "team_default"          "yes"
+        "is_admin_class"        "no"
+        "is_mother_zombie"      "no"
+        
+        "auth_mode"             "disabled"
+        "flags"                 ""
+        "groups"                ""
+        
+        "display_name"          "Normal Human"
+        "description"           "Default Counter-Strike settings"
+        
+        // Model
+        "model"                 "default"
+        "alpha_mode"            "none"
+        "alpha_invert"          "no"
+        "alpha_health"          "1000"
+        "alpha_min"             "0"
+        "alpha_max"             "255"
+        "alpha_min_dist"        "0"
+        "alpha_max_dist"        "0"
+        
+        // Hud
+        //"overlay_path"          ""
+        //"nvgs"                  "no"
+        //"fov"                   "90"
+        
+        // Effects
+        //"has_napalm"            "yes"
+        //"napalm_time"           "0.0"
+        
+        // Player behaviour
+        //"immunity_mode"         "0"
+        //"immunity_amount"       "0.0"
+        //"no_fall_damage"        "no"
+        //"weapon_profile"        "default"
+        
+        //"health"                "100"
+        //"health_regen_interval" "0.0"
+        //"health_regen_amount"   "0"
+        //"health_infect_gain"    "0"
+        //"kill_bonus"            "2"
+        
+        //"speed"                 "0"
+        //"knockback"             "0"
+        //"jump_height"           "1.0"
+        //"jump_distance"         "1.0"
+    }
+    
+    "human_vip"
+    {
+        // General
+        "enabled"               "no"
+        "team"                  "humans"
+        "team_default"          "yes"
+        "is_admin_class"        "no"
+        "is_mother_zombie"      "no"
+        
+        "auth_mode"             "disabled"  // Example: "either"
+        "flags"                 ""          // Example: "generic,chat"
+        "groups"                ""          // Example: "vip,admins"
+        
+        "display_name"          "VIP Human"
+        "description"           "Human class for important players"
+        
+        // Model
+        "model"                 "default"
+        "alpha_mode"            "none"
+        "alpha_invert"          "no"
+        "alpha_health"          "1000"
+        "alpha_min"             "0"
+        "alpha_max"             "255"
+        "alpha_min_dist"        "0"
+        "alpha_max_dist"        "0"
+        
+        // Hud
+        //"overlay_path"          ""
+        //"nvgs"                  "no"
+        //"fov"                   "90"
+        
+        // Effects
+        //"has_napalm"            "yes"
+        //"napalm_time"           "0.0"
+        
+        // Player behaviour
+        //"immunity_mode"         "0"
+        //"immunity_amount"       "0.0"
+        //"no_fall_damage"        "yes"
+        //"weapon_profile"        "default"
+        
+        //"health"                "200"
+        //"health_regen_interval" "1.0"
+        //"health_regen_amount"   "10"
+        //"health_infect_gain"    "0"
+        //"kill_bonus"            "1"
+        
+        //"speed"                 "25"
+        //"knockback"             "0"
+        //"jump_height"           "1.2"
+        //"jump_distance"         "1.2"
+    }
+    
+    "human_admin"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "humans"
+        "team_default"          "no"
+        "is_admin_class"        "yes"
+        "is_mother_zombie"      "no"
+        
+        "auth_mode"             "disabled"
+        "flags"                 ""
+        "groups"                ""
+        
+        "display_name"          "Admin Human"
+        "description"           "Human class for admins"
+        
+        // Model
+        "model"                 "default"
+        "alpha_mode"            "none"
+        "alpha_invert"          "no"
+        "alpha_health"          "1000"
+        "alpha_min"             "0"
+        "alpha_max"             "255"
+        "alpha_min_dist"        "0"
+        "alpha_max_dist"        "0"
+        
+        // Hud
+        //"overlay_path"          ""
+        //"nvgs"                  "no"
+        //"fov"                   "90"
+        
+        // Effects
+        //"has_napalm"            "yes"
+        //"napalm_time"           "0.0"
+        
+        // Player behaviour
+        //"immunity_mode"         "0"
+        //"immunity_amount"       "0.0"
+        //"no_fall_damage"        "yes"
+        //"weapon_profile"        "default"
+        
+        //"health"                "200"
+        //"health_regen_interval" "1.0"
+        //"health_regen_amount"   "10"
+        //"health_infect_gain"    "0"
+        //"kill_bonus"            "1"
+        
+        //"speed"                 "25"
+        //"knockback"             "0"
+        //"jump_height"           "1.2"
+        //"jump_distance"         "1.2"
+    }
+    
+    "human_speedy"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "humans"
+        "team_default"          "no"
+        "is_admin_class"        "no"
+        "is_mother_zombie"      "no"
+        
+        "auth_mode"             "disabled"
+        "flags"                 ""
+        "groups"                ""
+        
+        "display_name"          "Speedy"
+        "description"           "Fast human"
+        
+        // Model
+        "model"                 "default"
+        "alpha_mode"            "none"
+        "alpha_invert"          "no"
+        "alpha_health"          "1000"
+        "alpha_min"             "0"
+        "alpha_max"             "255"
+        "alpha_min_dist"        "0"
+        "alpha_max_dist"        "0"
+        
+        // Hud
+        //"overlay_path"          ""
+        //"nvgs"                  "no"
+        //"fov"                   "90"
+        
+        // Effects
+        //"has_napalm"            "no"
+        //"napalm_time"           "0.0"
+        
+        // Player behaviour
+        //"immunity_mode"         "0"
+        //"immunity_amount"       "0.0"
+        //"no_fall_damage"        "no"
+        //"weapon_profile"        "default"
+        
+        //"health"                "100"
+        //"health_regen_interval" "0.0"
+        //"health_regen_amount"   "0"
+        //"health_infect_gain"    "0"
+        //"kill_bonus"            "1"
+        
+        //"speed"                 "50"
+        //"knockback"             "0"
+        //"jump_height"           "1.0"
+        //"jump_distance"         "1.0"
+    }
+    
+    "human_light"
+    {
+        // General
+        "enabled"               "yes"
+        "team"                  "humans"
+        "team_default"          "no"
+        "is_admin_class"        "no"
+        "is_mother_zombie"      "no"
+        
+        "auth_mode"             "disabled"
+        "flags"                 ""
+        "groups"                ""
+        
+        "display_name"          "Light"
+        "description"           "Regular human with improved jump skills"
+        
+        // Model
+        "model"                 "default"
+        "alpha_mode"            "none"
+        "alpha_invert"          "no"
+        "alpha_health"          "1000"
+        "alpha_min"             "0"
+        "alpha_max"             "255"
+        "alpha_min_dist"        "0"
+        "alpha_max_dist"        "0"
+        
+        // Hud
+        //"overlay_path"          ""
+        //"nvgs"                  "no"
+        //"fov"                   "90"
+        
+        // Effects
+        //"has_napalm"            "yes"
+        //"napalm_time"           "0.0"
+        
+        // Player behaviour
+        //"immunity_mode"         "0"
+        //"immunity_amount"       "0.0"
+        //"no_fall_damage"        "yes"
+        //"weapon_profile"        "default"
+        
+        //"health"                "100"
+        //"health_regen_interval" "0.0"
+        //"health_regen_amount"   "0"
+        //"health_infect_gain"    "0"
+        //"kill_bonus"            "1"
+        
+        //"speed"                 "0"
+        //"knockback"             "0"
+        //"jump_height"           "1.3"
+        //"jump_distance"         "1.3"
+    }
+}

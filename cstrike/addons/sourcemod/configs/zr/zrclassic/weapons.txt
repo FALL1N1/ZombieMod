@@ -1,0 +1,708 @@
+// ============================================================================
+//
+//                              ZOMBIE:RELOADED
+//                            Weapon configuration
+//
+// Check the weapon configuration section in the manual for detailed info.
+//
+// ============================================================================
+//
+// SHORT DESCRIPTIONS
+//
+// Attribute:               Values:     Description:
+// ----------------------------------------------------------------------------
+// entity                   text        The entity name of the weapon refered to. (Don't change this)
+// type                     text        The type of weapon it is. [List types, separate by ", "]
+// slot                     number      The slot index the weapon resides in. (Don't change this)
+// ammocvar                 text        Cvar that contains the weapon's max reserve count.  See ammo_* cvars.
+// ammoprice                number      Price of ammo for this weapon.
+// restrictdefault          yes/no      The default restricted status of the weapon on map start.
+// toggleable               yes/no      Enable weapon to have restrictions toggled mid-game.
+// knockback                decimal     The knockback multiplier for the weapon. ['0.5' = half knockback | 2.0 = double]
+// price                    number      The price of the weapon in ZMarket. [Default: CS:S buymenu price]
+// buylimit                 number      The max number of purchases allowed per spawn for the weapon.
+//
+// Notes:
+// * Omitting an option will disable the feature for the weapon.
+
+"weapons" // Counter-Strike: Source weapons
+{
+	"Glock"
+	{
+		// General
+
+		"entity"		"weapon_glock"
+		"type"			"All, Pistol"
+		"slot"			"1"
+		"ammocvar"		"ammo_9mm_max"
+		"ammoprice"		"100"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"1.1"
+
+		// ZMarket
+
+		"price"			"400"
+	}
+
+	"USP"
+	{
+		// General
+
+		"entity"		"weapon_usp"
+		"type"			"All, Pistol"
+		"slot"			"1"
+		"ammocvar"		"ammo_45acp_max"
+		"ammoprice"		"100"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"1.1"
+
+		// ZMarket
+
+		"price"			"500"
+	}
+
+	"P228"
+	{
+		// General
+
+		"entity"		"weapon_p228"
+		"type"			"All, Pistol"
+		"slot"			"1"
+		"ammocvar"		"ammo_57mm_max"
+		"ammoprice"		"100"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"1.1"
+
+		// ZMarket
+
+		"price"			"600"
+
+	}
+
+	"Deagle"
+	{
+		// General
+
+		"entity"		"weapon_deagle"
+		"type"			"All, Pistol"
+		"slot"			"1"
+		"ammocvar"		"ammo_50AE_max"
+		"ammoprice"		"100"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"1.1"
+
+		// ZMarket
+
+		"price"			"650"
+
+	}
+
+	"Elite"
+	{
+		// General
+
+		"entity"		"weapon_elite"
+		"type"			"All, Pistol"
+		"slot"			"1"
+		"ammocvar"		"ammo_9mm_max"
+		"ammoprice"		"100"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"1.0"
+
+		// ZMarket
+
+		"price"			"800"
+
+	}
+
+	"Fiveseven"
+	{
+		// General
+
+		"entity"		"weapon_fiveseven"
+		"type"			"All, Pistol"
+		"slot"			"1"
+		"ammocvar"		"ammo_57mm_max"
+		"ammoprice"		"100"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"1.1"
+
+		// ZMarket
+
+		"price"			"750"
+
+	}
+
+	"M3"
+	{
+		// General
+
+		"entity"		"weapon_m3"
+		"type"			"All, Shotgun"
+		"slot"			"0"
+		"ammocvar"		"ammo_buckshot_max"
+		"ammoprice"		"300"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"0.8" // Remember that there are 8 pellets in 1 shot.
+
+		// ZMarket
+
+		"price"			"1700"
+
+	}
+
+	"XM1014"
+	{
+		// General
+
+		"entity"		"weapon_xm1014"
+		"type"			"All, Shotgun"
+		"slot"			"0"
+		"ammocvar"		"ammo_buckshot_max"
+		"ammoprice"		"300"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"0.8" // Remember that there are 8 pellets in 1 shot.
+
+		// ZMarket
+
+		"price"			"3000"
+
+	}
+
+	"Mac10"
+	{
+		// General
+
+		"entity"		"weapon_mac10"
+		"type"			"All, SMG"
+		"slot"			"0"
+		"ammocvar"		"ammo_45acp_max"
+		"ammoprice"		"300"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"1.0"
+
+		// ZMarket
+
+		"price"			"1400"
+	}
+
+	"TMP"
+	{
+		// General
+
+		"entity"		"weapon_tmp"
+		"type"			"All, SMG"
+		"slot"			"0"
+		"ammocvar"		"ammo_9mm_max"
+		"ammoprice"		"300"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"1.0"
+
+		// ZMarket
+
+		"price"			"1250"
+	}
+
+	"MP5Navy"
+	{
+		// General
+
+		"entity"		"weapon_mp5navy"
+		"type"			"All, SMG"
+		"slot"			"0"
+		"ammocvar"		"ammo_9mm_max"
+		"ammoprice"		"300"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"1.0"
+
+		// ZMarket
+
+		"price"			"1500"
+	}
+
+	"UMP45"
+	{
+		// General
+
+		"entity"		"weapon_ump45"
+		"type"			"All, SMG"
+		"slot"			"0"
+		"ammocvar"		"ammo_45acp_max"
+		"ammoprice"		"300"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"1.0"
+
+		// ZMarket
+
+		"price"			"1700"
+	}
+
+	"P90"
+	{
+		// General
+
+		"entity"		"weapon_p90"
+		"type"			"All, SMG"
+		"slot"			"0"
+		"ammocvar"		"ammo_57mm_max"
+		"ammoprice"		"300"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"1.0"
+
+		// ZMarket
+
+		"price"			"2350"
+	}
+
+	"Galil"
+	{
+		// General
+
+		"entity"		"weapon_galil"
+		"type"			"All, Rifle"
+		"slot"			"0"
+		"ammocvar"		"ammo_556mm_max"
+		"ammoprice"		"500"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"1.0"
+
+		// ZMarket
+
+		"price"			"2000"
+	}
+
+	"Famas"
+	{
+		// General
+
+		"entity"		"weapon_famas"
+		"type"			"All, Rifle"
+		"slot"			"0"
+		"ammocvar"		"ammo_556mm_max"
+		"ammoprice"		"500"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"1.0"
+
+		// ZMarket
+
+		"price"			"2250"
+	}
+
+	"AK47"
+	{
+		// General
+
+		"entity"		"weapon_ak47"
+		"type"			"All, Rifle"
+		"slot"			"0"
+		"ammocvar"		"ammo_762mm_max"
+		"ammoprice"		"500"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"1.0"
+
+		// ZMarket
+
+		"price"			"2500"
+	}
+
+	"M4A1"
+	{
+		// General
+
+		"entity"		"weapon_m4a1"
+		"type"			"All, Rifle"
+		"slot"			"0"
+		"ammocvar"		"ammo_556mm_max"
+		"ammoprice"		"500"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"1.0"
+
+		// ZMarket
+
+		"price"			"3100"
+	}
+
+	"SG552"
+	{
+		// General
+
+		"entity"		"weapon_sg552"
+		"type"			"All, Rifle"
+		"slot"			"0"
+		"ammocvar"		"ammo_556mm_max"
+		"ammoprice"		"500"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"1.0"
+
+		// ZMarket
+
+		"price"			"3500"
+	}
+
+	"AUG"
+	{
+		// General
+
+		"entity"		"weapon_aug"
+		"type"			"All, Rifle"
+		"slot"			"0"
+		"ammocvar"		"ammo_762mm_max"
+		"ammoprice"		"500"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"1.0"
+
+		// ZMarket
+
+		"price"			"3500"
+	}
+
+	"Scout"
+	{
+		// General
+
+		"entity"		"weapon_scout"
+		"type"			"All, Sniper"
+		"slot"			"0"
+		"ammocvar"		"ammo_762mm_max"
+		"ammoprice"		"750"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"1.8"
+
+		// ZMarket
+
+		"price"			"2750"
+	}
+
+	"SG550"
+	{
+		// General
+
+		"entity"		"weapon_sg550"
+		"type"			"All, Sniper"
+		"slot"			"0"
+		"ammocvar"		"ammo_556mm_max"
+		"ammoprice"		"1000"
+
+		// Restrict
+
+		"restrictdefault"	"yes"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"0.9"
+
+		// ZMarket
+
+		"price"			"4200"
+	}
+
+	"G3SG1"
+	{
+		// General
+
+		"entity"		"weapon_g3sg1"
+		"type"			"All, Sniper"
+		"slot"			"0"
+		"ammocvar"		"ammo_762mm_max"
+		"ammoprice"		"1000"
+
+		// Restrict
+
+		"restrictdefault"	"yes"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"0.9"
+
+		// ZMarket
+
+		"price"			"5000"
+	}
+
+	"AWP"
+	{
+		// General
+
+		"entity"		"weapon_awp"
+		"type"			"All, Sniper"
+		"slot"			"0"
+		"ammocvar"		"ammo_338mag_max"
+		"ammoprice"		"1000"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"1.8"
+
+		// ZMarket
+
+		"price"			"4750"
+	}
+
+	"M249"
+	{
+		// General
+
+		"entity"		"weapon_m249"
+		"type"			"All, Machine Gun"
+		"slot"			"0"
+		"ammocvar"		"ammo_556mm_box_max"
+		"ammoprice"		"1500"
+
+		// Restrict
+
+		"restrictdefault"	"yes"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"1.0"
+
+		// ZMarket
+
+		"price"			"5750"
+	}
+
+	"Knife"
+	{
+		// General
+
+		"entity"		"weapon_knife"
+		"type"			"All, Melee"
+		"slot"			"2"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"no"
+
+		// Knockback
+
+		"knockback"		"10.0"
+	}
+
+	"HEGrenade"
+	{
+		// General
+
+		"entity"		"weapon_hegrenade"
+		"type"			"All, Projectile"
+		"slot"			"3"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// Knockback
+
+		"knockback"		"6.0"
+
+		// ZMarket
+
+		"price"			"300"
+		"buylimit"		"1"
+	}
+
+	"Flashbang"
+	{
+		// General
+
+		"entity"		"weapon_flashbang"
+		"type"			"All, Projectile"
+		"slot"			"3"
+
+		// Restrict
+
+		"restrictdefault"	"yes"
+		"toggleable"		"yes"
+
+		// ZMarket
+
+		"price"			"200"
+		"buylimit"		"1"
+	}
+
+	"Smokegrenade"
+	{
+		// General
+
+		"entity"		"weapon_smokegrenade"
+		"type"			"All, Projectile"
+		"slot"			"3"
+
+		// Restrict
+
+		"restrictdefault"	"yes"
+		"toggleable"		"yes"
+
+		// ZMarket
+
+		"price"			"300"
+		"buylimit"		"1"
+	}
+
+	"NVGs"
+	{
+		// General
+
+		"entity"		"item_nvgs"
+		"type"			"All, Extras"
+		"slot"			"4"
+
+		// Restrict
+
+		"restrictdefault"	"no"
+		"toggleable"		"yes"
+
+		// ZMarket
+
+		"price"			"1000"
+	}
+}

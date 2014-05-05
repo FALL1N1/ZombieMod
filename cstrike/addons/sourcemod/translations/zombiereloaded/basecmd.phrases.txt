@@ -1,0 +1,265 @@
+"Phrases"
+{
+	// **********************************
+	//       Base Command Defaults
+	// **********************************
+
+	// {1}: PROJECT_FULLNAME
+	// {2}: PROJECT_BASE_CMD
+	"BaseCmd server syntax"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1} Menu:\nUsage: {2} <command> [arguments]"
+	}
+
+	"BaseCmd server credits description"
+	{
+		"en"		"Display credits listing"
+	}
+
+	"BaseCmd server dumpcmdtree description"
+	{
+		"en"		"Dumps all sub-commands to file"
+	}
+
+	// {1}: PROJECT_BASE_CMD
+	"BaseCmd dumpcmdtree syntax"
+	{
+		"#format"	"{1:s}"
+		"en"		"Usage: {1} dumpcmdtree <file>"
+	}
+
+	"BaseCmd server modules description"
+	{
+		"en"		"Manage modules"
+	}
+
+	"BaseCmd server version description"
+	{
+		"en"		"Display version information"
+	}
+
+	"BaseCmd server config description"
+	{
+		"en"		"Manage configs"
+	}
+
+	"BaseCmd server log description"
+	{
+		"en"		"Manage log settings"
+	}
+
+	// {1}: PROJECT_FULLNAME
+	"BaseCmd server modules syntax"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} Modules Menu:"
+	}
+
+	"BaseCmd server modules enable description"
+	{
+		"en"		"Enable a module"
+	}
+
+	"BaseCmd server modules disable description"
+	{
+		"en"		"Disable a module"
+	}
+
+	"BaseCmd server modules disable_all description"
+	{
+		"en"		"Disable all enabled modules"
+	}
+
+	"BaseCmd server modules info description"
+	{
+		"en"		"Information about a module"
+	}
+
+	"BaseCmd server modules list description"
+	{
+		"en"		"Show registered modules"
+	}
+
+	"BaseCmd server modules refresh description"
+	{
+		"en"		"Reloads/refreshes all registered modules in the plugin"
+	}
+
+	"BaseCmd server modules reload description"
+	{
+		"en"		"Reloads a module"
+	}
+
+	// {1}: PROJECT_FULLNAME
+	"BaseCmd server config syntax"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} Config Menu:"
+	}
+
+	"BaseCmd server config reload description"
+	{
+		"en"		"Reloads a module's configs"
+	}
+
+	"BaseCmd server config reload_all description"
+	{
+		"en"		"Reloads all modules' configs"
+	}
+
+	// {1}: PROJECT_FULLNAME
+	"BaseCmd server log syntax"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} Log Settings Menu:"
+	}
+
+	"BaseCmd server log whitelist_add description"
+	{
+		"en"		"Add a module to the whitelist"
+	}
+
+	
+	"BaseCmd server log whitelist_rem description"
+	{
+		"en"		"Remove a module from the whitelist"
+	}
+
+	// {1}: PROJECT_FULLNAME
+	// {2}: PROJECT_BASE_CMD
+	"BaseCmd client syntax"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1} Menu:\nUsage: {2} <command> [arguments]"
+	}
+
+	"BaseCmd client credits description"
+	{
+		"en"		"Display credits listing"
+	}
+
+	"BaseCmd client modules description"
+	{
+		"en"		"Manage module"
+	}
+
+	"BaseCmd client version description"
+	{
+		"en"		"Display version information"
+	}
+
+
+	// **********************************
+	//          Module Manager
+	// **********************************
+
+	// Command: PROJECT_BASE_CMD (Defined in project.inc)
+
+	// {1}: PROJECT_BASE_CMD
+	// {2}: sub-command accessor.
+	// {3}: sub-command with required argument.
+	"ModuleMgr modules sub-command syntax"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"en"		"Usage: {1} {2} {3} <# or moduleshortname>"
+	}	
+
+	"ModuleMgr modules disable_all"
+	{
+		"en"		"All modules have been disabled."
+	}
+
+	// {1}: the full name of the module.
+	// {2}: the short name of the module.
+	// {3}: the description of the module.
+	// {4}: yes if the module is enabled, no if not.
+	"ModuleMgr modules info"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"  Module Name: {1}\n  Short Name: {2}\n  Description: {3}\n  Enabled: {4}"
+	}
+
+	// {1}: the full name of the module.
+	// {2}: enabled/disabled.
+	// {3}: the short name of the module.
+	"ModuleMgr modules list"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"en"		"\"{1}\" ({2}) aka {3}"
+	}
+
+	"ModuleMgr modules list client"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"\"{1}\" - {2}"
+	}
+
+	"ModuleMgr modules list hidden"
+	{
+		"en"		"<Hidden>"
+	}
+
+	"ModuleMgr modules refresh"
+	{
+		"en"		"All modules have been refreshed."
+	}
+
+	// {1}: the reloaded module's fullname.
+	"ModuleMgr modules reload"
+	{
+		"#format"	"{1:s}"
+		"en"		"Reloaded module: \"{1}\""
+	}
+
+
+	// **********************************
+	//           Event Manager
+	// **********************************
+
+	// Command: PROJECT_BASE_CMD
+
+	// {1}: list of the module's registered events.
+	"EventMgr modules info"
+	{
+		"#format"	"{1:s}"
+		"en"		"  Currently Registered Events: {1}"
+	}
+
+
+	// **********************************
+	//           Config Manager
+	// **********************************
+
+	// Command: PROJECT_BASE_CMD
+
+	// {1}: list of the module's registered config files.
+	"ConfigMgr modules info"
+	{
+		"#format"	"{1:s}"
+		"en"		"  Currently Registered Config Files: {1}"
+	}
+
+
+	// **********************************
+	//       Translations Manager
+	// **********************************
+
+	// Command: PROJECT_BASE_CMD
+
+
+	// **********************************
+	//            Log Manager
+	// **********************************
+
+	// Command: PROJECT_BASE_CMD
+
+	// {1}: yes if the module is on the whitelist, no if not.
+	// {2}: PROJECT_CVAR_PREFIX
+	"LogMgr modules info"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"  On Log Whitelist: {1} (see cvar {2}_log_whitelist)"
+	}
+
+}

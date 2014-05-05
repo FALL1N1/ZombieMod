@@ -1,0 +1,24 @@
+// ============================================================================
+//
+//                              ZOMBIE:RELOADED
+//                          Map Rules Configuration
+//
+// See Map Rules Configuration (3.x) section in the manual for detailed
+// info.
+//
+// ============================================================================
+//
+// This is simply a list in the format:
+// <map> <ruleset/game mode>
+// 
+// ZR will load the ruleset on the specified map unless overridden by the zr_nextruleset console command.
+//
+// An alternative method to defining rulesets per-map is to use the command zr_setmapruleset <map> <ruleset>
+// The command is equivalent to this file, except this file is loaded before any .cfg files.  Without this file
+// it wouldn't be possible to set a game mode for the first map on server load.
+// This file is reloaded every map change, so using the command to change a game mode for a map defined in this file
+// will be overwritten every map change.  This means you should only use the command to set game modes for new maps
+//
+// It's recommended you set all map-specific game modes here and use the command for special cases.
+
+de_dust2 zriot

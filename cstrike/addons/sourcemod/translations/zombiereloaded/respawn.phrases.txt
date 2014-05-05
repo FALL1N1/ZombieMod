@@ -1,0 +1,122 @@
+"Phrases"
+{
+	// **********************************************
+	//                  Respawn Module
+	// **********************************************
+
+	// Center text.
+	// {1}: Seconds left until respawn.
+	"Respawn countdown"
+	{
+		"#format"	"{1:d}"
+		"en"		"Respawn in: {1} seconds"
+	}
+
+	// Center text.
+	// {1}: Number of respawns left, if there's a limit.
+	"Respawn spawns left"
+	{
+		"#format"	"{1:d}"
+		"en"		"Respawns left: {1}"
+	}
+
+	// {1}: PROJECT_CMD_PREFIX
+	"Respawn command syntax"
+	{
+		"#format"	"{1:s}"
+		"en"		"Respawn a client on a given team.  Usage: {1}_spawn <client> [zombie|human]"
+	}
+
+	"Respawn command invalid team"
+	{
+		"en"		"Invalid team given.  Respawning client on their current team if possible."
+	}
+
+	// {1}: Player that was respawned.
+	"Respawn command success"
+	{
+		"#format"	"{1:N}"
+		"en"		"Respawned player {green}{1}{default}."
+	}
+
+	// {1}: Player that was respawned.
+	"Respawn command fail"
+	{
+		"#format"	"{1:N}"
+		"en"		"Could not respawn player {green}{1}{default}."
+	}
+
+	"Respawn zadmin button"
+	{
+		"en"		"Respawn player"
+	}
+
+	"Respawn menu main title"
+	{
+		"en"		"Choose first parameter:\nThe unchosen option will be picked second"
+	}
+
+	"Respawn menu main choose client"
+	{
+		"en"		"Choose client"
+	}
+
+	"Respawn menu main choose team"
+	{
+		"en"		"Choose team"
+	}
+
+	"Respawn menu clients title 1"
+	{
+		"en"		"Choose client to respawn:"
+	}
+
+	"Respawn menu clients title 2"
+	{
+		"#format"	"{1:s}"
+		"en"		"Choose client to respawn:\nCvar respawn_team: {1}"
+	}
+
+	"Respawn menu clients title 3"
+	{
+		"en"		"Choose client to respawn:\nTeam: Zombies"
+	}
+
+	"Respawn menu clients title 4"
+	{
+		"en"		"Choose client to respawn:\nTeam: Humans"
+	}
+
+	"Respawn menu choose team title 1"
+	{
+		"en"		"Choose a team:"
+	}
+
+	"Respawn menu choose team title 2"
+	{
+		"#format"	"{1:N}"
+		"en"		"Respawn player: {1}\nChoose a team:"
+	}
+
+	"Respawn menu choose team cvar"
+	{
+		"#format"	"{1:s}"
+		"en"		"Team defined in configs ({1})"
+	}
+
+	"Respawn menu choose team current"
+	{
+		"en"		"Player's current team"
+	}
+
+	"Respawn menu choose team zombie"
+	{
+		"en"		"Zombie"
+	}
+
+	"Respawn menu choose team human"
+	{
+		"en"		"Human"
+	}
+
+}

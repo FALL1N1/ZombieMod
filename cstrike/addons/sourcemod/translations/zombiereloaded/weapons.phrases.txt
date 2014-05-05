@@ -1,0 +1,308 @@
+"Phrases"
+{
+	// **********************************************
+	//              Weapons Module
+	// **********************************************
+
+	"Weapons refuse enable"
+	{
+		"en"		"Weapons refused to load because it couldn't retrieve any usable data from file."
+	}
+
+	//                  Restrict		       //
+	/////////////////////////////////////////////////
+
+	// {1}: Weapon whose restrictions are being changed.
+
+	"Restrict weapon"
+	{
+		"#format"	"{1:s}"
+		"en"		"Weapon {green}\"{1}\" {default}has been restricted."
+	}
+
+	"Unrestrict weapon"
+	{
+		"#format"	"{1:s}"
+		"en"		"Weapon {green}\"{1}\" {default}has been unrestricted."
+	}
+
+	"Restrict weapon stopped"
+	{
+		"#format"	"{1:s}"
+		"en"		"Weapon {green}\"{1}\" {default}is already restricted."
+	}
+
+	"Unrestrict weapon stopped"
+	{
+		"#format"	"{1:s}"
+		"en"		"Weapon {green}\"{1}\" {default} has no restrictions set."
+	}
+
+	// {1}: Weapon type whose restrictions are being changed.
+
+	"Restrict weapon type"
+	{
+		"#format"	"{1:s}"
+		"en"		"Weapons of type {green}\"{1}\" {default}have been restricted."
+	}
+
+	"Unrestrict weapon type"
+	{
+		"#format"	"{1:s}"
+		"en"		"Weapons of type {green}\"{1}\" {default}have been unrestricted."
+	}
+
+	"Restrict weapon type stopped"
+	{
+		"#format"	"{1:s}"
+		"en"		"Weapons of type {green}\"{1}\" {default}are all already restricted."
+	}
+
+	"Unrestrict weapon type stopped"
+	{
+		"#format"	"{1:s}"
+		"en"		"Weapons of type {green}\"{1}\" {default}have no restrictions set."
+	}
+
+	// {1}: Weapon whose restrictions can't be changed.
+	"Restrict weapon untoggleable"
+	{
+		"#format"	"{1:s}"
+		"en"		"Weapon {green}\"{1}\" {default}may not have its restrictions toggled."
+	}
+
+	// {1}: User input for a "weapon" parameter.
+	"Weapon invalid"
+	{
+		"#format"	"{1:s}"
+		"en"		"Weapon {green}\"{1}\" {default}is an invalid weapon (type) name."
+	}
+
+	// {1}: Weapon that is restricted.
+	"Weapon is restricted"
+	{
+		"#format"	"{1:s}"
+		"en"		"Weapon {green}{1} {default}is restricted."
+	}
+
+	// {1}: PROJECT_CMD_PREFIX
+	"Weapons command restrict syntax"
+	{
+		"#format"	"{1:s}"
+		"en"		"Restricts a weapon or a weapon type. Usage: {1}_restrict <weapon|weapon type> [weapon2|weapontype2] ..."
+	}
+
+	// {1}: PROJECT_CMD_PREFIX
+	"Weapons command unrestrict syntax"
+	{
+		"#format"	"{1:s}"
+		"en"		"Unrestricts a weapon or a weapon type. Usage: {1}_unrestrict <weapon|weapon type> [weapon2|weapontype2] ..."
+	}
+
+	//                 ZMarket		       //
+	/////////////////////////////////////////////////
+
+	"Weapons zmarket buyzone"
+	{
+		"en"		"You must be in a buyzone to use ZMarket."
+	}
+
+	// {1}: Weapon that was bought from ZMarket.
+	"Weapons zmarket buy with ammo"
+	{
+		"#format"	"{1:s}"
+		"en"		"You have bought weapon {green}{1}. {default}Select item again to buy ammo if you are low."
+	}
+
+	// {1}: An item bought from ZMarket (aka no ammo)
+	"Weapons zmarket buy no ammo"
+	{
+		"#format"	"{1:s}"
+		"en"		"You have bought item {green}{1}."
+	}
+
+	// {1}: Weapon whose buy limit is being exceeded.
+	// {2}: The buy limit of the weapon.
+	"Weapons zmarket buylimit exceeded"
+	{
+		"#format"	"{1:s},{2:d}"
+		"en"		"Weapon {green}{1} {default}has a buy limit of {green}{2}{default}.  Wait until you respawn to try again."
+	}
+
+	// {1}: Max number of grenades of this type that a player can carry.
+	"Weapons zmarket grenade max"
+	{
+		"#format"	"{1:d}"
+		"en"		"You may only carry {1} grenade(s) of this type."
+	}
+
+	"Weapons zmarket auto-rebuy toggle on"
+	{
+		"en"		"Auto-rebuy has been enabled, your weapon setup will be automatically bought for you each time you spawn."
+	}
+
+	"Weapons zmarket auto-rebuy toggle off"
+	{
+		"en"		"Auto-rebuy has been disabled."
+	}
+
+	"Weapons zmarket updated weapon setup"
+	{
+		"en"		"You are not able to buy a weapon at this time, but your weapon setup has been updated with this weapon."
+	}
+
+	"Weapons zmarket save current weapon setup"
+	{
+		"en"		"Saved current weapon setup, use rebuy option to buy these weapons again."
+	}
+
+	// {1}: Weapon that is being removed from a player's setup because it's restricted.
+	"Weapons zmarket weapon setup restricted"
+	{
+		"#format"	"{1:s}"
+		"en"		"Weapon {1} is a restricted weapon and has been automatically removed from your weapon setup."
+	}
+
+	"Weapons menu zmarket main title"
+	{
+		"en"		"ZMarket\nSelect an Option:"
+	}
+
+	"Weapons menu zmarket main rebuy saved setup"
+	{
+		"en"		"Rebuy Saved Setup"
+	}
+
+	"Weapons menu zmarket main buy weapons"
+	{
+		"en"		"Buy Weapons"
+	}
+
+	"Weapons menu zmarket main save current setup"
+	{
+		"en"		"Save Current Setup"
+	}
+
+	"Weapons menu zmarket main view weapon setup"
+	{
+		"en"		"View Weapon Setup"
+	}
+
+	// {1}: "Yes"/"No" or translated forms.
+	"Weapons menu zmarket main auto-rebuy"
+	{
+		"#format"	"{1:s}"
+		"en"		"Auto-Rebuy (on spawn): {1}"
+	}
+
+	"Weapons menu zmarket weapon setup title"
+	{
+		"en"		"ZMarket\nCurrent Weapon Setup:\nSelect weapon slot to clear."
+	}
+
+	"Weapons menu zmarket weapon setup clear all"
+	{
+		"en"		"Clear All"
+	}
+
+	"Weapons menu zmarket weapon setup primary"
+	{
+		"en"		"Primary:"
+	}
+
+	"Weapons menu zmarket weapon setup secondary"
+	{
+		"en"		"Secondary:"
+	}
+
+	"Weapons menu zmarket weapon setup melee"
+	{
+		"en"		"Melee:"
+	}
+
+	"Weapons menu zmarket weapon setup projectile"
+	{
+		"en"		"Projectile:"
+	}
+
+	"Weapons menu zmarket weapon setup extras"
+	{
+		"en"		"Extras:"
+	}
+
+	"Weapons menu zmarket types title"
+	{
+		"en"		"ZMarket\nSelect Weapon Type:"
+	}
+
+	// {1}: The type of weapons being displayed in a menu.
+	"Weapons menu zmarket types weapon type title"
+	{
+		"#format"	"{1:s}"
+		"en"		"ZMarket\nWeapon Type: {1}\n[] = Restricted"
+	}
+
+	// {1}: The name of the weapon.
+	// {2}: The cost of the weapon.
+	"Weapons menu zmarket types weapon info"
+	{
+		"#format"	"{1:s},{2:d}"
+		"en"		"{1} (${2})"
+	}
+
+	// {1}: The number of buys left for a player.  (This is appended to the previous phrase when the weapon has a buy limit.)
+	"Weapons menu zmarket types weapon buys left"
+	{
+		"#format"	"{1:d}"
+		"en"		"\nBuys Left: {1}"
+	}
+
+	"Weapons menu zmarket types weapon ammo"
+	{
+		"en"		"Ammo"
+	}
+
+	"Weapons menu zmarket sub weapon setup title"
+	{
+		"en"		"ZMarket\nCurrent Weapon Setup:\nSelect weapon to clear."
+	}
+
+	"Weapons menu zmarket sub weapon setup clear all"
+	{
+		"en"		"Clear All"
+	}
+
+	//               Weapon Menus		       //
+	/////////////////////////////////////////////////
+
+	"Weapons zadmin button"
+	{
+		"en"		"Weapon Restrictions"
+	}
+
+	"Weapons menu restrict types title"
+	{
+		"en"		"Weapon Restrictions\nSelect Weapon Type:"
+	}
+
+	// {1}: The type of weapons being displayed in a menu.
+	"Weapons menu restrict weapon list title"
+	{
+		"#format"	"{1:s}"
+		"en"		"Weapon Restrictions\nWeapon Type: {1}\n[] = Restricted"
+	}
+
+	// {1}: The weapon type that the user is restricting via menu.
+	"Weapons menu restrict types restrict all"
+	{
+		"#format"	"{1:s}"
+		"en"		"Restrict weapon type {1}"
+	}
+
+	// {1}: The weapon type that the user is unrestricting via menu.
+	"Weapons menu restrict types unrestrict all"
+	{
+		"#format"	"{1:s}"
+		"en"		"Unrestrict weapon type {1}"
+	}
+}

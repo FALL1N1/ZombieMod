@@ -1,0 +1,7 @@
+Code style suggestions.
+
+
+Function declarations
+---------------------
+* Wrap long parameter lists into multiple lines with one line for each
+  parameter. Indent parameters two tabs (8 spaces).

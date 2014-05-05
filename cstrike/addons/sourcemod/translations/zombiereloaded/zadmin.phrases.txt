@@ -1,0 +1,17 @@
+"Phrases"
+{
+	// **********************************************
+	//              ZAdmin Module
+	// **********************************************
+
+	"ZAdmin zmenu button"
+	{
+		"en"		"ZAdmin - Open admin menu"
+	}
+
+	"ZAdmin title"
+	{
+		"en"		"ZAdmin\nSelect Category:"
+	}
+
+}
